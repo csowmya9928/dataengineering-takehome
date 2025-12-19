@@ -22,7 +22,6 @@ def clean_customers(df: pd.DataFrame, ingest_date: str) -> pd.DataFrame:
     df["email_valid"] = df["email"].apply(is_valid_email)
 
     df["created_at_utc"] = df["created_at"].apply(parse_timestamp_to_utc)
-    # df["country"] = df["country"].astype(str).str.strip().str.upper().replace({"NAN": None})
     df["country"] = df["country"].apply(normalize_country)
     df["status"] = df["status"].apply(normalize_customer_status)
     df["ingest_date"] = ingest_date
@@ -53,13 +52,12 @@ def clean_events(df: pd.DataFrame, ingest_date: str) -> pd.DataFrame:
 
     df["ingest_date"] = ingest_date
 
-    # ----------------------------
-    # 2) Full-row duplicates
-    # ----------------------------
+    # TODO: Candidate: define & implement dedupe policy (event_id duplicates vs full row duplicates)
+    # Full-row duplicates:
+
     df = df.drop_duplicates(keep="last")
 
-    # ----------------------------
-    # 3) event_id dedupe policy
+    # event_id dedupe policy:
     # Prefer (in order):
     #   event_time_utc present
     #   customer_id present
@@ -69,7 +67,6 @@ def clean_events(df: pd.DataFrame, ingest_date: str) -> pd.DataFrame:
     #   duration_ms present
     #   latest event_time_utc
     #   otherwise keep last occurrence
-    # ----------------------------
 
     # treat empty/whitespace and string nulls as missing for text columns
     def has_real_value(series: pd.Series) -> pd.Series:
@@ -114,14 +111,9 @@ def clean_events(df: pd.DataFrame, ingest_date: str) -> pd.DataFrame:
     )
 
     return df
-    # TODO: Candidate: define & implement dedupe policy (event_id duplicates vs full row duplicates)
 
 def clean_orders(df: pd.DataFrame, ingest_date: str) -> pd.DataFrame:
     df = df.copy()
-
-    # -----------------------------
-    # 1) Basic cleaning (your code)
-    # -----------------------------
     df["order_id"] = df["order_id"].astype(str).str.strip()
     df["customer_id"] = df["customer_id"].apply(normalize_customer_id)
 
@@ -132,15 +124,13 @@ def clean_orders(df: pd.DataFrame, ingest_date: str) -> pd.DataFrame:
 
     df["ingest_date"] = ingest_date
 
-    # -----------------------------
-    # 2) Full-row duplicates
-    # -----------------------------
+    # Full-row duplicates
     # If two rows are identical across ALL columns, keep the last one
     df = df.drop_duplicates(keep="last")
 
-    # -----------------------------
+  
     # 3) order_id dedupe policy
-    # -----------------------------
+    
     # helper: for text columns, treat empty/whitespace/"nan"/"none"/"null" as missing
     def has_real_value(series: pd.Series) -> pd.Series:
         s = series.astype("string").str.strip()

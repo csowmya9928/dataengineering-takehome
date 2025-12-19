@@ -19,7 +19,7 @@ def split_clean_quarantine_customers(
     """
     Validate customers and split into clean + quarantine with reject reasons.
 
-    Assumes these cleaned columns exist (from your cleaning step):
+    Assumes these cleaned columns exist:
       - customer_id
       - email
       - email_valid (bool)
@@ -31,7 +31,6 @@ def split_clean_quarantine_customers(
       - Quarantine rows keep reject_reason
       - Clean rows do NOT include reject_reason
     """
-
     df = df.copy()
 
     def year_out_of_range(dt_series: pd.Series) -> pd.Series:
@@ -76,7 +75,6 @@ def split_clean_quarantine_customers(
     invalid_country = df["country"].isna()
     reject_reason.loc[invalid_country] += "|invalid_country"
 
-    # ingest_date optional checks
     if "ingest_date" in df.columns:
         missing_ingest_date = is_missing_text(df["ingest_date"])
         reject_reason.loc[missing_ingest_date] += "|missing_ingest_date"
@@ -97,7 +95,7 @@ def split_clean_quarantine_customers(
     # Stats / reporting
     full_row_dupes_rows_involved = int(df.duplicated(keep=False).sum())
 
-    # duplicates by customer_id (ignore missing)
+    # duplicates by customer_id
     non_missing = df[~missing_customer_id]
     customer_id_dupes_rows_involved = int(non_missing.duplicated(subset=["customer_id"], keep=False).sum())
 
@@ -150,8 +148,6 @@ def split_clean_quarantine_events(
 
     reason = pd.Series("", index=df.index, dtype="object")
 
-    # basic validity checks
-
     # event_id missing
     bad_event_id = is_missing_text(df["event_id"])
     reason[bad_event_id] += "|missing_event_id"
@@ -198,7 +194,6 @@ def split_clean_quarantine_events(
         df_ing = df["ingest_date"].astype("string").str.strip()
         bad_ingest = df_ing.isna() | (df_ing == "") | (df_ing != str(ingest_date))
         reason[bad_ingest] += "|ingest_date_mismatch"
-
     
     # finalize reject_reason column
     
@@ -208,7 +203,6 @@ def split_clean_quarantine_events(
     quarantine = df[df["reject_reason"].notna()].copy()
     clean = df[df["reject_reason"].isna()].drop(columns=["reject_reason"]).copy()
 
-    
     # stats
     # full-row duplicates in the ORIGINAL df (before split)
     full_row_dup_count = int(df.duplicated(keep=False).sum())
@@ -322,7 +316,6 @@ def split_clean_quarantine_orders(
     reason[bad_status] += "|missing_status"
 
     # referential integrity (orders -> customers)
-    
     customer_set = set(
         customers_clean["customer_id"].astype("string").str.strip()
     ) if (customers_clean is not None and "customer_id" in customers_clean.columns) else set()
