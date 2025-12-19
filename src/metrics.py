@@ -126,7 +126,7 @@ def compute_daily_metrics(
     events_dup_id_rate = id_duplicate_rate(events_for_dups, "event_id")
     orders_dup_id_rate = id_duplicate_rate(orders_for_dups, "order_id")
 
-    # full-row duplicates (you can tune subset_cols)
+    # full-row duplicates
     events_dup_fullrow_rate = full_row_duplicate_rate(events_for_dups)
     orders_dup_fullrow_rate = full_row_duplicate_rate(orders_for_dups)
 

@@ -180,7 +180,6 @@ def parse_timestamp_to_utc(value: str | None) -> datetime | None:
     if not s:
         return None
 
-
     #Numeric-only inputs: YYYYMMDD vs epoch vs reject
     if s.isdigit():
         # YYYYMMDD date code
