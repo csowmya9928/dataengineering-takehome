@@ -39,7 +39,10 @@ python -m src.pipeline --data_dir data/raw --out_dir data --start 2025-12-10 --e
 ```bash
 pytest -q
 ```
-
+### 5) Generate new data
+```bash
+python scripts/generate_data.py --start 2025-12-10 --end 2025-12-20
+```
 
 ## Folder structure
 ```
