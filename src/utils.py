@@ -121,7 +121,7 @@ def normalize_customer_id(value) -> str | None:
     if value is None:
         return None
 
-    if isinstance(value, float) and value != value:  # NaN
+    if isinstance(value, float) and value != value:  # NaN #reusable Python normalizer rather than a pandas-specific operation.
         return None
 
     s = str(value).strip().lower()

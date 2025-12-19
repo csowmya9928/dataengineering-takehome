@@ -73,6 +73,7 @@ def clean_events(df: pd.DataFrame, ingest_date: str) -> pd.DataFrame:
         s = series.astype("string").str.strip()
         return s.notna() & s.ne("") & ~s.str.lower().isin(["nan", "none", "null"])
 
+    #I create helper flags to rank records by quality.
     df["has_event_time"] = df["event_time_utc"].notna().astype(int)
     df["has_customer"] = has_real_value(df["customer_id"]).astype(int)
     df["has_event_type"] = has_real_value(df["event_type"]).astype(int)
