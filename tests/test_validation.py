@@ -124,7 +124,7 @@ def test_split_clean_quarantine_customers_quarantine_reasons_and_stats():
 
     # 1 valid + 7 invalid
     assert len(clean) == 1
-    assert len(quarantine) ==2
+    assert len(quarantine) ==7
 
     # quarantine MUST include reject_reason
     assert "reject_reason" in quarantine.columns

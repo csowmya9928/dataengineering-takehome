@@ -1,0 +1,111 @@
+{
+  "ingest_date": "2025-12-15",
+  "customers": {
+    "total": 200,
+    "clean": 82,
+    "quarantine": 118,
+    "by_reason": {
+      "invalid_status": 48,
+      "invalid_country": 35,
+      "invalid_status|invalid_country": 17,
+      "invalid_email": 6,
+      "invalid_email|invalid_country": 5,
+      "invalid_email|invalid_status|invalid_country": 4,
+      "invalid_email|invalid_status": 3
+    },
+    "duplicates": {
+      "full_row_dupes_rows_involved": 0,
+      "customer_id_dupes_rows_involved": 0
+    }
+  },
+  "events": {
+    "total": 5000,
+    "calen": 1077,
+    "quarantine": 3923,
+    "by_reason": {
+      "orphan_customer_id": 1475,
+      "missing_event_type|orphan_customer_id": 516,
+      "missing_platform|orphan_customer_id": 484,
+      "missing_event_type": 390,
+      "missing_platform": 371,
+      "missing_event_type|missing_platform|orphan_customer_id": 171,
+      "missing_event_type|missing_platform": 121,
+      "invalid_event_time|orphan_customer_id": 98,
+      "invalid_event_time": 72,
+      "missing_platform|invalid_event_time|orphan_customer_id": 41,
+      "missing_event_type|invalid_event_time|orphan_customer_id": 33,
+      "missing_platform|invalid_event_time": 28,
+      "missing_event_type|invalid_event_time": 27,
+      "negative_duration|orphan_customer_id": 12,
+      "duration_exceeds_max": 11,
+      "missing_event_type|missing_platform|invalid_event_time": 10,
+      "missing_event_type|missing_platform|invalid_event_time|orphan_customer_id": 8,
+      "negative_duration": 8,
+      "missing_event_type|duration_exceeds_max|orphan_customer_id": 7,
+      "missing_event_type|negative_duration|orphan_customer_id": 6,
+      "missing_event_type|negative_duration": 5,
+      "duration_exceeds_max|orphan_customer_id": 5,
+      "missing_platform|negative_duration": 5,
+      "missing_platform|duration_exceeds_max|orphan_customer_id": 4,
+      "missing_platform|negative_duration|orphan_customer_id": 4,
+      "missing_event_type|missing_platform|negative_duration": 2,
+      "missing_event_type|missing_platform|duration_exceeds_max|orphan_customer_id": 2,
+      "missing_event_type|missing_platform|negative_duration|orphan_customer_id": 1,
+      "invalid_event_time|duration_exceeds_max|orphan_customer_id": 1,
+      "invalid_event_time|negative_duration|orphan_customer_id": 1,
+      "invalid_event_time|duration_exceeds_max": 1,
+      "missing_event_type|missing_platform|duration_exceeds_max": 1,
+      "missing_platform|invalid_event_time|duration_exceeds_max|orphan_customer_id": 1,
+      "missing_platform|duration_exceeds_max": 1
+    },
+    "duplicates": {
+      "full_row": 0,
+      "event_id": 0
+    }
+  },
+  "orders": {
+    "total": 400,
+    "clean": 59,
+    "quarantine": 341,
+    "by_reason": {
+      "orphan_customer_id": 72,
+      "unknown_currency|orphan_customer_id": 35,
+      "missing_status|orphan_customer_id": 29,
+      "failed_should_not_have_positive_amount|orphan_customer_id": 26,
+      "invalid_order_time|orphan_customer_id": 22,
+      "unknown_currency": 20,
+      "unknown_currency|missing_status|orphan_customer_id": 18,
+      "missing_status": 14,
+      "failed_should_not_have_positive_amount": 13,
+      "unknown_currency|missing_status": 11,
+      "invalid_order_time": 11,
+      "invalid_order_time|missing_status|orphan_customer_id": 9,
+      "unknown_currency|failed_should_not_have_positive_amount": 8,
+      "invalid_order_time|missing_status": 6,
+      "invalid_order_time|unknown_currency|orphan_customer_id": 6,
+      "unknown_currency|failed_should_not_have_positive_amount|orphan_customer_id": 5,
+      "invalid_order_time|failed_should_not_have_positive_amount": 5,
+      "invalid_order_time|unknown_currency": 5,
+      "invalid_order_time|unknown_currency|failed_should_not_have_positive_amount|orphan_customer_id": 4,
+      "missing_amount|orphan_customer_id": 3,
+      "invalid_order_time|unknown_currency|failed_should_not_have_positive_amount": 3,
+      "invalid_order_time|unknown_currency|missing_status": 2,
+      "invalid_order_time|failed_should_not_have_positive_amount|orphan_customer_id": 2,
+      "missing_amount": 2,
+      "invalid_order_time|unknown_currency|missing_status|orphan_customer_id": 1,
+      "invalid_order_time|negative_amount|paid_requires_positive_amount": 1,
+      "missing_amount|missing_status": 1,
+      "invalid_order_time|missing_amount|orphan_customer_id": 1,
+      "unknown_currency|negative_amount|refund_requires_positive_amount": 1,
+      "negative_amount|refund_requires_positive_amount|orphan_customer_id": 1,
+      "unknown_currency|missing_amount|orphan_customer_id": 1,
+      "negative_amount|missing_status|orphan_customer_id": 1,
+      "negative_amount|paid_requires_positive_amount|orphan_customer_id": 1,
+      "unknown_currency|missing_amount": 1
+    },
+    "duplicates": {
+      "full_row": 0,
+      "order_id": 0
+    }
+  }
+}
