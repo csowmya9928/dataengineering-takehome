@@ -1,0 +1,16 @@
+{
+  "ingest_date": "2025-12-16",
+  "flags": [
+    {
+      "type": "missing_hour_coverage",
+      "severity": "medium",
+      "details": {
+        "zero_hours": 0,
+        "missing_hours": 6,
+        "total_bad_hours": 6,
+        "threshold": 4,
+        "expected_hours": 24
+      }
+    }
+  ]
+}

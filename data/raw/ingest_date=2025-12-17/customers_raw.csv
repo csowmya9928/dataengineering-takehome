@@ -1,0 +1,212 @@
+customer_id,email,created_at,country,status,ingest_date
+c00000,user0@example.com,2025-07-17 20:00:00,,active,2025-12-17
+c00001,user1@example.com,2025-06-04 11:00:00,uk,,2025-12-17
+c00002,user2@example.com,2025-04-22T23:00:00+00:00,,,2099-01-01
+c00003,user3example.com,2025-03-10 10:00:00,IN,ACTIVE,2025-12-17
+c00004,user4example.com,2025-02-14T00:00:00+00:00,GB,,2025-12-17
+c00005,user5@example.com,2025-08-09 00:00:00,usa,,2025-12-17
+c00006,user6@example.com,2025-05-24 00:00:00,BR,actve,2025-12-17
+c00007,user7@example.com,2025-07-27 22:00:00,United States,actve,2025-12-17
+c00008,user8@example.com,2025-01-13T19:00:00+00:00,uk,actve,2025-12-17
+c00009,user9@example.com,2025-01-24 01:00:00,US,,2025-12-17
+c00010,user10@example.com,2025-01-19T01:00:00+00:00,,ACTIVE,2025-12-17
+c00011,user11@example.com,2025-05-18T22:00:00+00:00,,active,2025-12-17
+c00012,user12@example.com,2025-01-10 21:00:00,IN,inactive,2099-01-01
+c00013,user13@example.com,2025-01-10 17:00:00,IN,banned,2025-12-17
+c00014,user14@example.com,2025-02-10 07:00:00,usa,ACTIVE,2025-12-17
+c00015,user15@example.com,2025-08-06 06:00:00,BR,,2025-12-17
+c00016,user16@example.com,2025-01-12 14:00:00,uk,,2025-12-17
+c00017,user17@example.com,2025-08-12T13:00:00+00:00,N/A,,2025-12-17
+c00018,user18example.com,2025-09-13T02:00:00+00:00,india,inactive,2025-12-17
+c00019,user19@example.com,2025-03-24T20:00:00+00:00,GB,inactive,2025-12-17
+c00020,user20@example.com,2025-05-18 07:00:00,IN,,2025-12-17
+c00021,user21@example.com,2025-04-15T19:00:00+00:00,usa,inactive,2025-12-17
+c00022,user22@example.com,2025-03-30 04:00:00,GB,actve,2025-12-17
+c00023,user23@example.com,2025-07-07T08:00:00+00:00,india,,2099-01-01
+c00024,user24@example.com,2025-01-15 00:00:00,india,actve,2025-12-17
+c00024,user24@example.com,not a date,india,actve,2025-12-17
+c00025,user25@example.com,2025-06-24T16:00:00+00:00,GB,inactive,2025-12-17
+c00026,user26@example.com,2025-05-10 09:00:00,US,active,2025-12-17
+c00027,user27@example.com,2025-07-28 11:00:00,United States,,2025-12-17
+c00028,user28@example.com,2025-03-13T03:00:00+00:00,BR,ACTIVE,2025-12-17
+c00029,user29@example.com,2025-03-10T05:00:00+00:00,IN,,2025-12-17
+c00030,user30@example.com,2025-08-25 15:00:00,BR,actve,2025-12-17
+c00031,user31@example.com,2025-09-23 08:00:00,United States,banned,2025-12-17
+c00032,user32@example.com,2025-05-13T17:00:00+00:00,usa,,2099-01-01
+c00033,user33example.com,2025-07-14T04:00:00+00:00,BR,ACTIVE,2025-12-17
+c00034,user34@example.com,2025-03-17T10:00:00+00:00,usa,inactive,2025-12-17
+c00035,user35@example.com,2025-07-15 22:00:00,GB,banned,2025-12-17
+c00036,user36@example.com,2025-03-27 04:00:00,IN,active,2025-12-17
+c00037,user37@example.com,2025-10-09 03:00:00,N/A,,2025-12-17
+c00038,user38@example.com,2025-06-15 13:00:00,United States,banned,2025-12-17
+c00039,user39@example.com,2025-05-24T19:00:00+00:00,US,,2025-12-17
+c00040,user40@example.com,2025-10-16 04:00:00,GB,actve,2025-12-17
+c00041,user41@example.com,2025-09-04T23:00:00+00:00,US,,2025-12-17
+c00042,user42@example.com,2025-07-09 04:00:00,N/A,banned,2025-12-17
+c00043,user43@example.com,2025-06-05T17:00:00+00:00,usa,actve,2025-12-17
+c00044,user44@example.com,2025-07-02 06:00:00,BR,banned,2025-12-17
+c00045,user45@example.com,2025-02-20T06:00:00+00:00,N/A,inactive,2099-01-01
+c00046,user46@example.com,2025-07-06T16:00:00+00:00,United States,active,2099-01-01
+c00047,user47@example.com,2025-05-16 16:00:00,india,active,2025-12-17
+c00048,user48@example.com,2025-02-20 16:00:00,N/A,,2025-12-17
+c00049,user49@example.com,2025-07-13 14:00:00,IN,banned,2025-12-17
+c00050,user50@example.com,2025-09-15T00:00:00+00:00,,inactive,2025-12-17
+c00051,user51@example.com,2025-10-03 08:00:00,,,2025-12-17
+c00052,user52@example.com,2025-08-04 02:00:00,IN,,2025-12-17
+c00053,user53@example.com,2025-01-22T14:00:00+00:00,US,,2025-12-17
+c00054,user54@example.com,2025-05-17 20:00:00,IN,,2025-12-17
+c00055,user55example.com,2025-07-02 22:00:00,india,banned,2025-12-17
+c00056,user56@example.com,2025-09-05 13:00:00,,active,2025-12-17
+c00057,user57@example.com,2025-09-17 17:00:00,N/A,,2025-12-17
+c00058,user58@example.com,2025-10-28T01:00:00+00:00,,ACTIVE,2025-12-17
+c00059,user59@example.com,2025-04-17 17:00:00,GB,banned,2025-12-17
+c00060,user60@example.com,2025-02-16 11:00:00,US,banned,2025-12-17
+c00061,user61example.com,2025-10-21T00:00:00+00:00,uk,inactive,2025-12-17
+c00061,user61example.com,not a date,uk,inactive,2025-12-17
+c00062,user62@example.com,2025-10-18 23:00:00,uk,active,2025-12-17
+c00062,user62@example.com,not a date,uk,active,2025-12-17
+c00063,user63@example.com,2025-04-09 17:00:00,IN,actve,2025-12-17
+c00064,user64example.com,2025-07-23 10:00:00,GB,,2025-12-17
+c00065,user65@example.com,2025-03-05T17:00:00+00:00,uk,active,2025-12-17
+c00066,user66@example.com,2025-05-26 18:00:00,United States,inactive,2099-01-01
+c00067,user67@example.com,2025-01-23 18:00:00,usa,actve,2025-12-17
+c00068,user68@example.com,2025-07-21 13:00:00,india,inactive,2025-12-17
+c00069,user69@example.com,2025-07-02 01:00:00,,,2025-12-17
+c00070,user70@example.com,2025-03-09 10:00:00,,inactive,2025-12-17
+c00071,user71@example.com,2025-06-21T05:00:00+00:00,usa,active,2099-01-01
+c00072,user72@example.com,2025-09-27 11:00:00,United States,active,2025-12-17
+c00073,user73@example.com,2025-10-02 08:00:00,N/A,,2099-01-01
+c00074,user74@example.com,2025-09-11T06:00:00+00:00,BR,,2025-12-17
+c00075,user75@example.com,2025-05-24 01:00:00,india,,2099-01-01
+c00076,user76@example.com,2025-10-21T20:00:00+00:00,US,inactive,2025-12-17
+c00077,user77@example.com,2025-01-30 04:00:00,N/A,,2025-12-17
+c00078,user78@example.com,2025-09-01T03:00:00+00:00,uk,active,2025-12-17
+c00079,user79@example.com,2025-04-16 16:00:00,usa,,2025-12-17
+c00080,user80@example.com,2025-07-31T17:00:00+00:00,N/A,,2025-12-17
+c00081,user81@example.com,2025-10-16T19:00:00+00:00,US,ACTIVE,2025-12-17
+c00082,user82@example.com,2025-01-04T15:00:00+00:00,uk,actve,2025-12-17
+c00083,user83@example.com,2025-08-23T13:00:00+00:00,usa,ACTIVE,2025-12-17
+c00084,user84@example.com,2025-05-01T05:00:00+00:00,india,,2025-12-17
+c00085,user85example.com,2025-06-14T21:00:00+00:00,IN,,2099-01-01
+c00086,user86@example.com,2025-08-31T14:00:00+00:00,india,banned,2099-01-01
+c00087,user87@example.com,2025-10-16 06:00:00,BR,ACTIVE,2025-12-17
+c00088,user88@example.com,2025-04-13 23:00:00,N/A,inactive,2025-12-17
+c00089,user89@example.com,2025-10-21T16:00:00+00:00,IN,banned,2025-12-17
+c00090,user90@example.com,2025-10-14T11:00:00+00:00,uk,actve,2099-01-01
+c00091,user91@example.com,2025-02-18T13:00:00+00:00,US,,2025-12-17
+c00091,user91@example.com,not a date,US,,2025-12-17
+c00092,user92@example.com,2025-03-06 23:00:00,GB,active,2025-12-17
+c00093,user93@example.com,2025-01-13 15:00:00,BR,inactive,2025-12-17
+c00094,user94example.com,2025-04-27 15:00:00,india,ACTIVE,2025-12-17
+c00095,user95example.com,2025-03-23T16:00:00+00:00,N/A,,2025-12-17
+c00095,user95example.com,not a date,N/A,,2025-12-17
+c00096,user96@example.com,2025-05-30 19:00:00,,inactive,2025-12-17
+c00097,user97@example.com,2025-04-19T06:00:00+00:00,IN,actve,2025-12-17
+c00098,user98example.com,2025-03-30T05:00:00+00:00,N/A,banned,2025-12-17
+c00099,user99@example.com,2025-03-03T23:00:00+00:00,United States,active,2025-12-17
+c00100,user100@example.com,2025-07-23T09:00:00+00:00,usa,ACTIVE,2025-12-17
+c00101,user101@example.com,2025-08-02 12:00:00,india,,2025-12-17
+c00102,user102@example.com,2025-05-06 21:00:00,india,,2025-12-17
+c00103,user103@example.com,2025-03-28T21:00:00+00:00,US,ACTIVE,2025-12-17
+c00104,user104@example.com,2025-04-30T07:00:00+00:00,IN,ACTIVE,2025-12-17
+c00105,user105@example.com,2025-03-20T09:00:00+00:00,GB,inactive,2025-12-17
+c00106,user106@example.com,2025-04-09 13:00:00,BR,ACTIVE,2025-12-17
+c00107,user107@example.com,2025-10-11T08:00:00+00:00,IN,,2025-12-17
+c00108,user108@example.com,2025-07-16T17:00:00+00:00,india,inactive,2025-12-17
+c00109,user109@example.com,2025-02-05 23:00:00,BR,ACTIVE,2025-12-17
+c00110,user110@example.com,2025-10-22T20:00:00+00:00,IN,active,2025-12-17
+c00111,user111@example.com,2025-05-03 19:00:00,N/A,actve,2025-12-17
+c00112,user112@example.com,2025-06-23T00:00:00+00:00,BR,,2025-12-17
+c00113,user113@example.com,2025-04-19T04:00:00+00:00,GB,,2025-12-17
+c00114,user114@example.com,2025-07-24 14:00:00,uk,,2025-12-17
+c00115,user115@example.com,2025-02-06 05:00:00,usa,,2025-12-17
+c00116,user116@example.com,2025-05-31 06:00:00,,,2025-12-17
+c00117,user117@example.com,2025-03-25T02:00:00+00:00,,ACTIVE,2025-12-17
+c00118,user118@example.com,2025-01-04 10:00:00,uk,actve,2025-12-17
+c00119,user119@example.com,2025-03-06 23:00:00,BR,ACTIVE,2025-12-17
+c00120,user120@example.com,2025-04-11 17:00:00,usa,active,2025-12-17
+c00121,user121@example.com,2025-04-07T07:00:00+00:00,GB,banned,2025-12-17
+c00122,user122@example.com,2025-04-21 18:00:00,,,2025-12-17
+c00123,user123@example.com,2025-05-08T00:00:00+00:00,United States,,2099-01-01
+c00124,user124example.com,2025-09-27T10:00:00+00:00,usa,,2025-12-17
+c00125,user125@example.com,2025-07-19T14:00:00+00:00,US,actve,2025-12-17
+c00126,user126@example.com,2025-09-22T10:00:00+00:00,india,inactive,2025-12-17
+c00126,user126@example.com,not a date,india,inactive,2025-12-17
+c00127,user127@example.com,2025-09-25 13:00:00,usa,inactive,2025-12-17
+c00128,user128@example.com,2025-07-09T20:00:00+00:00,US,ACTIVE,2025-12-17
+c00129,user129@example.com,2025-09-12 00:00:00,GB,banned,2025-12-17
+c00130,user130@example.com,2025-08-13 13:00:00,US,active,2025-12-17
+c00131,user131@example.com,2025-08-09 06:00:00,N/A,,2025-12-17
+c00132,user132@example.com,2025-04-09 16:00:00,IN,,2025-12-17
+c00133,user133@example.com,2025-09-30 20:00:00,IN,,2025-12-17
+c00134,user134@example.com,2025-06-21 22:00:00,IN,inactive,2025-12-17
+c00135,user135@example.com,2025-05-10 00:00:00,N/A,banned,2025-12-17
+c00136,user136@example.com,2025-08-30 11:00:00,india,actve,2025-12-17
+c00137,user137@example.com,2025-08-30T14:00:00+00:00,United States,active,2025-12-17
+c00138,user138@example.com,2025-04-19 09:00:00,United States,active,2025-12-17
+c00139,user139@example.com,2025-04-15 07:00:00,uk,inactive,2025-12-17
+c00140,user140example.com,2025-06-09 05:00:00,IN,,2025-12-17
+c00141,user141@example.com,2025-06-02 00:00:00,IN,active,2025-12-17
+c00142,user142@example.com,2025-04-10 23:00:00,uk,banned,2099-01-01
+c00143,user143@example.com,2025-03-10 01:00:00,GB,,2025-12-17
+c00144,user144@example.com,2025-01-06 04:00:00,BR,active,2025-12-17
+c00145,user145@example.com,2025-06-09T21:00:00+00:00,,banned,2025-12-17
+c00146,user146@example.com,2025-07-21 05:00:00,N/A,active,2025-12-17
+c00147,user147@example.com,2025-01-26 09:00:00,uk,banned,2025-12-17
+c00148,user148@example.com,2025-10-20 03:00:00,india,active,2099-01-01
+c00149,user149@example.com,2025-09-13 07:00:00,uk,ACTIVE,2025-12-17
+c00150,user150@example.com,2025-04-27 22:00:00,GB,inactive,2025-12-17
+c00151,user151@example.com,2025-03-29 21:00:00,N/A,banned,2025-12-17
+c00152,user152example.com,2025-06-28T00:00:00+00:00,india,banned,2025-12-17
+c00153,user153@example.com,2025-03-28T21:00:00+00:00,usa,banned,2025-12-17
+c00154,user154@example.com,2025-01-26 06:00:00,IN,ACTIVE,2025-12-17
+c00155,user155@example.com,2025-06-29T16:00:00+00:00,IN,ACTIVE,2025-12-17
+c00156,user156@example.com,2025-10-15 18:00:00,N/A,inactive,2025-12-17
+c00157,user157@example.com,2025-09-01 13:00:00,usa,,2025-12-17
+c00158,user158@example.com,2025-08-29 23:00:00,BR,actve,2025-12-17
+c00159,user159@example.com,2025-04-13 12:00:00,BR,ACTIVE,2025-12-17
+c00160,user160@example.com,2025-05-29T07:00:00+00:00,,active,2025-12-17
+c00161,user161@example.com,2025-03-07T11:00:00+00:00,india,inactive,2025-12-17
+c00162,user162@example.com,2025-01-10 06:00:00,N/A,actve,2025-12-17
+c00163,user163example.com,2025-09-22 04:00:00,,banned,2025-12-17
+c00164,user164example.com,2025-03-02 14:00:00,BR,inactive,2025-12-17
+c00165,user165@example.com,2025-06-01 01:00:00,IN,ACTIVE,2099-01-01
+c00165,user165@example.com,not a date,IN,ACTIVE,2099-01-01
+c00166,user166@example.com,2025-06-29T18:00:00+00:00,N/A,banned,2025-12-17
+c00167,user167@example.com,2025-06-29 12:00:00,usa,actve,2025-12-17
+c00168,user168@example.com,2025-04-15T05:00:00+00:00,IN,,2025-12-17
+c00169,user169@example.com,2025-01-03 20:00:00,United States,actve,2025-12-17
+c00170,user170@example.com,2025-02-21T12:00:00+00:00,BR,,2025-12-17
+c00171,user171@example.com,2025-01-29T04:00:00+00:00,usa,active,2025-12-17
+c00172,user172@example.com,2025-10-14 23:00:00,IN,inactive,2025-12-17
+c00173,user173@example.com,2025-01-11T18:00:00+00:00,US,active,2025-12-17
+c00173,user173@example.com,not a date,US,active,2025-12-17
+c00174,user174@example.com,2025-06-12 23:00:00,N/A,banned,2025-12-17
+c00175,user175@example.com,2025-08-14 17:00:00,india,inactive,2025-12-17
+c00176,user176@example.com,2025-09-16 21:00:00,United States,active,2025-12-17
+c00177,user177@example.com,2025-02-06T19:00:00+00:00,india,inactive,2025-12-17
+c00178,user178@example.com,2025-03-14T04:00:00+00:00,uk,,2099-01-01
+c00179,user179@example.com,2025-04-28 01:00:00,,,2025-12-17
+c00180,user180@example.com,2025-10-25T11:00:00+00:00,uk,ACTIVE,2025-12-17
+c00181,user181@example.com,2025-08-22 10:00:00,IN,,2099-01-01
+c00182,user182@example.com,2025-01-26 03:00:00,GB,actve,2025-12-17
+c00183,user183@example.com,2025-08-03 13:00:00,uk,ACTIVE,2025-12-17
+c00184,user184example.com,2025-08-13 06:00:00,IN,,2025-12-17
+c00185,user185@example.com,2025-02-08T09:00:00+00:00,United States,active,2025-12-17
+c00186,user186@example.com,2025-05-10 10:00:00,india,inactive,2025-12-17
+c00187,user187example.com,2025-08-27 17:00:00,N/A,ACTIVE,2025-12-17
+c00188,user188@example.com,2025-05-10 15:00:00,india,inactive,2025-12-17
+c00188,user188@example.com,not a date,india,inactive,2025-12-17
+c00189,user189@example.com,2025-05-25 08:00:00,GB,actve,2025-12-17
+c00190,user190@example.com,2025-07-06T15:00:00+00:00,usa,,2025-12-17
+c00191,user191example.com,2025-04-27 15:00:00,usa,active,2025-12-17
+c00192,user192@example.com,2025-07-15T17:00:00+00:00,BR,banned,2025-12-17
+c00193,user193@example.com,2025-05-24T19:00:00+00:00,US,inactive,2025-12-17
+c00194,user194@example.com,2025-05-28 01:00:00,United States,inactive,2025-12-17
+c00195,user195@example.com,2025-04-11 02:00:00,uk,inactive,2025-12-17
+c00195,user195@example.com,not a date,uk,inactive,2025-12-17
+c00196,user196@example.com,2025-09-02T21:00:00+00:00,N/A,actve,2025-12-17
+c00197,user197@example.com,2025-01-19T11:00:00+00:00,N/A,,2025-12-17
+c00198,user198@example.com,2025-07-21T01:00:00+00:00,IN,banned,2025-12-17
+c00199,user199@example.com,2025-07-20 17:00:00,BR,banned,2025-12-17
+c00199,user199@example.com,not a date,BR,banned,2025-12-17
