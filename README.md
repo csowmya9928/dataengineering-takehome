@@ -111,7 +111,19 @@ amount:
 - Metrics files are written partitioned by ingest_date so reruns don’t double-count.
 
 ## Outputs
+## Data processed for 5 days: start=2025-12-10 and end=2025-12-15
 <img width="300" height="1030" alt="image" src="https://github.com/user-attachments/assets/db2ca33f-7c9e-4d56-a507-fac6329c6385" />
+
+## Sample Hourly Metrics(2025-12-14)
+<img width="596" height="540" alt="image" src="https://github.com/user-attachments/assets/0011b2fc-d878-474a-ab6e-20de00097e2d" />
+
+## Sample Daily Metrics(2025-12-14)
+<img width="1790" height="272" alt="image" src="https://github.com/user-attachments/assets/2c2de438-4b91-4fd0-a4e7-35a8cd46feda" />
+
+## Sample Validation report(2025-12-14)
+
+<img width="792" height="528" alt="image" src="https://github.com/user-attachments/assets/8a40ceee-c1da-4092-9768-73bbec83b93e" />
+
 
 
 
