@@ -119,14 +119,7 @@ def process_day(data_dir: str, out_dir: str, ingest_date: str, chunksize_events:
     hourly = compute_hourly_events(events_clean)
     append_hourly(os.path.join(out_dir, "metrics", "hourly_events.parquet"), hourly)
 
-    daily_row = compute_daily_metrics(
-        ingest_date=ingest_date,
-        customers_total=len(customers_cleaned), customers_clean=len(customers_clean), customers_quarantine=len(customers_quarantine),
-        events_total=len(events_cleaned), events_clean=len(events_clean), events_quarantine=len(events_quarantine),
-        orders_total=len(orders_cleaned), orders_clean=len(orders_clean), orders_quarantine=len(orders_quarantine),
-        events_clean_df=events_clean, orders_clean_df=orders_clean,
-        validation_report=validation_report,
-    )
+    daily_row=compute_daily_metrics(ingest_date,customers_clean,customers_quarantine,events_clean,events_quarantine,orders_clean,orders_quarantine)
     daily_metrics_path = os.path.join(out_dir, "metrics", "daily_metrics.parquet")
     upsert_daily_metrics(daily_metrics_path, daily_row)
 
