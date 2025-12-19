@@ -111,7 +111,7 @@ amount:
 - Metrics files are written partitioned by ingest_date so reruns don’t double-count.
 
 ## Outputs
-<img width="666" height="1430" alt="image" src="https://github.com/user-attachments/assets/db2ca33f-7c9e-4d56-a507-fac6329c6385" />
+<img width="300" height="1030" alt="image" src="https://github.com/user-attachments/assets/db2ca33f-7c9e-4d56-a507-fac6329c6385" />
 
 
 
