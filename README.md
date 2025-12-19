@@ -64,15 +64,15 @@ scripts/generate_data.py  (generate more messy data)
 
 ### Deduplication policy assumptions
 
-Customers : 
+#### Customers : 
 - one row per customer_id after dedupe. Prefer the “best” record by:
   valid email present, created_at parseable, latest created_at (tie-breaker)
 
-Events :
+#### Events :
 - Duplicate full rows can be dropped safely.
 - For duplicate event_id, keep the “best” record by completeness (has timestamp, has customer_id, has event_type, has platform, has session_id, has duration, then latest event_time)
 
-Orders :
+#### Orders :
 - Duplicate full rows can be dropped safely.
 - For duplicate order_id, keep the “best” record by completeness order_id, has_order_time, has_customer, has_amount, has_currency,
   has_status, order_time_utc
@@ -83,12 +83,12 @@ Orders :
 
 ### Numeric rules assumptions
 
-duration_ms is milliseconds:
+#### duration_ms(milliseconds):
 
   - must be >= 0
   - must be <= MAX_DURATION_MS (24h = 86,400,000 ms)
 
-amount:
+#### amount:
 
  - must be numeric
  - must be >= 0 for all statuses
